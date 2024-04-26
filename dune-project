@@ -2,6 +2,8 @@
 
 (generate_opam_files)
 
+(name oni2-oniguruma)
+
 (package
  (name oni2-oniguruma)
  (depends
