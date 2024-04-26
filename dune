@@ -1,0 +1,13 @@
+(library
+ (name oniguruma)
+ (public_name oni2-oniguruma)
+ (foreign_stubs
+  (language c)
+  (names bindings)
+  (flags :standard (:include cflags.sexp)))
+ (c_library_flags (:include libs.sexp)))
+
+(rule
+ (targets cflags.sexp libs.sexp)
+ (action
+  (run ./config/discover.exe)))
